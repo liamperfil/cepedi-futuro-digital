@@ -4,6 +4,8 @@ meu_dicionario = {
     "cidade": "São Paulo"
 }
 
+meu_dicionario = dict(nome="Paulo", idade=25, cidade="Rio de Janeiro")  # Outra forma de criar um dicionário
+
 meu_dicionario["profissão"] = "Engenheiro"  # Adicionando um novo par chave-valor
 
 # Imprimindo chaves e valores do dicionário
@@ -22,6 +24,10 @@ if "Paulo" in meu_dicionario.values():
 meu_dicionario.pop("cidade") # Removendo um par chave-valor
 
 meu_dicionario.clear() # Limpando o dicionário
+
+#################################################################
+# Métodos e funções úteis para dicionários
+#################################################################
 '''
 list()
 dict()
@@ -36,3 +42,24 @@ values()
 copy()
 del
 '''
+
+#################################################################
+# Dicionários aninhados
+#################################################################
+pessoas = {
+"jean": {
+"sobrenome": "lima",
+"cidade": "salvador",
+"nascimento": 1992
+},
+"joseane": {
+"sobrenome": "maciel",
+"cidade": "lauro de freitas",
+"nascimento": 2000
+}
+}
+
+for x, obj in pessoas.items():
+    print(x)
+    for chave, valor in obj.items():
+        print(f"  {chave}: {valor}")
