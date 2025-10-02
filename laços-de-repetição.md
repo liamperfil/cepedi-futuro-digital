@@ -37,9 +37,17 @@ for i in range(5):
   print(i)
 ```
 
-4. Usando enumerate, ela cria pares indice-valor
+4. Usando enumerate, cria pares indice-valor
 ```py
+yourlist = ['joao', 'maria', 'jose']
 for i, x in enumerate(yourlist):
+  if x == 'jose':
+    print(f'jose é o numero {i} da lista')
+```
+
+```py
+for i, x in enumerate("jean lima"):
+  print(f'i = {i}, x = {x}')
 ```
 
 ```py
