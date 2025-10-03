@@ -47,12 +47,12 @@ del
 # Dicionários aninhados
 #################################################################
 pessoas = {
-"jean": {
+"joao": {
 "sobrenome": "lima",
 "cidade": "salvador",
 "nascimento": 1992
 },
-"joseane": {
+"maria": {
 "sobrenome": "maciel",
 "cidade": "lauro de freitas",
 "nascimento": 2000
